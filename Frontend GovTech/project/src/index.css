@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --color-navy-950: #0d1547;
+  --color-navy-900: #1a2260;
+  --color-navy-800: #1e2a6e;
+  --color-navy-700: #243280;
+  --color-navy-600: #2d3d96;
+  --color-navy-500: #3a4da8;
+  --color-navy-400: #5566bb;
+  --color-navy-300: #7a88cc;
+  --color-navy-200: #a8b2dd;
+  --color-navy-100: #d5daee;
+  --color-navy-50: #eceffe;
+
+  --color-govgreen-900: #1a4d2a;
+  --color-govgreen-800: #1f5c33;
+  --color-govgreen-700: #27713f;
+  --color-govgreen-600: #2d7d46;
+  --color-govgreen-500: #349152;
+  --color-govgreen-400: #4aaa69;
+  --color-govgreen-300: #6dbf87;
+  --color-govgreen-200: #9fd4b0;
+  --color-govgreen-100: #ceecd7;
+  --color-govgreen-50: #e8f6ec;
+
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse-slow {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+@keyframes progress-fill {
+  from { width: 0%; }
+  to { width: 100%; }
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 2s ease-in-out infinite;
+}
+
+.progress-bar-fill {
+  animation: progress-fill 3s ease-in-out forwards;
+}
